@@ -48,9 +48,9 @@ search();
 
 $(document).ready(function() {
 
-    $('.second-info.even').click(function () {
+    $('.second-info.even, .second-info-odd').click(function () {
         $(this).toggleClass('active').next().slideToggle();
-        $('.second-info.even').not(this).removeClass('active').next().slideUp();
+        $('.second-info.even, .second-info-odd').not(this).removeClass('active').next().slideUp();
     });
 
 });
