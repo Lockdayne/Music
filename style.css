@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+input[type="text"] {
+    height: 35px;
+    width: 230px;
+    border: 1px solid #C2C6C9;
+    border-radius: 5px 0 0 5px;
+    padding-left: 10px;
+    outline: none;
+}
+
+button {
+    width: 45px;
+    height: 35px;
+    background-color: #F3F3F3;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #C2C6C9;
+    position: relative;
+    left: -5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.field-search-track {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#page-track-list {
+    width: 1600px;
+    height: 1500px;
+    background-color: #EEF7FF;
+    margin: 20px auto 0 auto;
+}
+
+.tracklist {
+    width: 1550px;
+    height: 750px;
+    margin: 25px auto 0 auto;
+    list-style: none;
+}
+
+/* First string*/
+
+.first-track-info {
+    width: 1550px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.empty-cell,
+.empty-cell-1,
+.artist-cell,
+.track-cell,
+.collection-cell,
+.genre-cell {
+    font-size: 18px;
+}
+
+.empty-cell,
+.empty-cell-1 {
+    float: left;
+    width: 185px;
+    height: 50px;
+}
+
+.artist-cell,
+.track-cell
+            {
+    float: left;
+    width: 260px;
+    height: 50px;
+}
+
+.collection-cell {
+    float: left;
+    width: 380px;
+    height: 50px;
+}
+
+.genre-cell {
+    float: left;
+    width: 200px;
+    height: 50px;
+}
+
+/* Second string */
+
+.second-info {
+    width: 1550px;
+    height: 140px;
+    background-color: #CCDFF0;
+    line-height: 140px;
+    font-size: 18px;
+}
+
+.img-album {
+    float: left;
+    width: 185px;
+    height: 140px;
+    padding: 20px 20px;
+}
+
+.artist-track {
+    float: left;
+    width: 260px;
+    height: 140px;
+}
+
+.track-name {
+    float: left;
+    width: 260px;
+    height: 140px;
+}
+
+.collection-name {
+    float: left;
+    width: 380px;
+    height: 140px;
+}
+
+.genre-track {
+    float: left;
+    width: 200px;
+    height: 140px;
+}
+
+/* Additional track derails */
+
+.additional-data {
+    width: 1550px;
+    height: 140px;
+    background-color: #CCDFF0;
+    display: none;
+}
+
+i.fa-music {
+    font-size: 20px;
+}
+
+.second-info.even:after {
+    font-family: "FontAwesome";
+    content: '\f067';
+    position: relative;
+    right: -180px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.second-info.odd:after {
+    font-family: "FontAwesome";
+    content: '\f067';
+    position: relative;
+    right: -180px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.second-info.even.active:after {
+    font-family: "FontAwesome";
+    content: '\f068';
+    cursor: pointer;
+}
+
+.second-info.odd.active:after {
+    font-family: "FontAwesome";
+    content: '\f068';
+    cursor: pointer;
+}
+
+.second-info.odd {
+    background-color: #EEF7FF;
+}
+
+.name-track {
+    padding-left: 250px;
+    width: 500px;
+    height: 140px;
+}
+
+.duration-and-price-track {
+    position: relative;
+    top: -80px;
+    right: -650px;
+    width: 500px;
+    height: 140px;
+    line-height: 20px;
+}

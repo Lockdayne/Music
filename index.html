@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <title>Track List</title>
+</head>
+<body>
+
+<div id="page-track-list">
+    <div class="field-search-track">
+        <input type="text" name="search" id="search" placeholder="Search..." maxlength="50">
+        <button><i class="fa fa-search"></i></button>
+    </div>
+
+    <ul class="tracklist" data-tracklist="open">
+    <li>
+        <div class="first-track-info">
+            <div class="empty-cell"></div>
+            <div class="artist-cell">Artist</div>
+            <div class="track-cell">Track</div>
+            <div class="collection-cell">Collection</div>
+            <div class="genre-cell">Genre</div>
+            <div class="empty-cell-1"></div>
+        </div>
+    </li>
+    </ul>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
